@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/brain.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rede Neural</title>
+</head>
+<body>
+    <header>
+        <h1>Rede Neural</h1>
+    </header>
+
+    <section class="logic-gates">
+        <!-- Porta XOR -->
+        <div class="logic-gate">
+            <h2>Porta XOR</h2>
+            <div class="input-container">
+                <input type="text" id="primeiroNumeroXOR" placeholder="Primeiro Número">
+                <input type="text" id="segundoNumeroXOR" placeholder="Segundo Número">
+                <button onclick="calcularXOR()">Calcular</button>
+            </div>
+            <div id="resultadoXOR" class="result"></div>
+        </div>
+
+        <!-- Porta AND -->
+        <div class="logic-gate">
+            <h2>Porta AND</h2>
+            <div class="input-container">
+                <input type="text" id="primeiroNumeroAND" placeholder="Primeiro Número">
+                <input type="text" id="segundoNumeroAND" placeholder="Segundo Número">
+                <button onclick="calcularAND()">Calcular</button>
+            </div>
+            <div id="resultadoAND" class="result"></div>
+        </div>
+
+        <!-- Porta OR -->
+        <div class="logic-gate">
+            <h2>Porta OR</h2>
+            <div class="input-container">
+                <input type="text" id="primeiroNumeroOR" placeholder="Primeiro Número">
+                <input type="text" id="segundoNumeroOR" placeholder="Segundo Número">
+                <button onclick="calcularOR()">Calcular</button>
+            </div>
+            <div id="resultadoOR" class="result"></div>
+        </div>
+
+        <!-- Porta NOT -->
+        <div class="logic-gate">
+            <h2>Porta NOT</h2>
+            <div class="input-container">
+                <input type="text" id="entradaNOT" placeholder="Entrada">
+                <button onclick="calcularNOT()">Calcular</button>
+            </div>
+            <div id="resultadoNOT" class="result"></div>
+        </div>
+
+        <!-- Porta NAND -->
+        <div class="logic-gate">
+            <h2>Porta NAND</h2>
+            <div class="input-container">
+                <input type="text" id="primeiroNumeroNAND" placeholder="Primeiro Número">
+                <input type="text" id="segundoNumeroNAND" placeholder="Segundo Número">
+                <button onclick="calcularNAND()">Calcular</button>
+            </div>
+            <div id="resultadoNAND" class="result"></div>
+        </div>
+
+        <!-- Porta NOR -->
+        <div class="logic-gate">
+            <h2>Porta NOR</h2>
+            <div class="input-container">
+                <input type="text" id="primeiroNumeroNOR" placeholder="Primeiro Número">
+                <input type="text" id="segundoNumeroNOR" placeholder="Segundo Número">
+                <button onclick="calcularNOR()">Calcular</button>
+            </div>
+            <div id="resultadoNOR" class="result"></div>
+        </div>
+
+        <!-- Porta XNOR -->
+        <div class="logic-gate">
+            <h2>Porta XNOR</h2>
+            <div class="input-container">
+                <input type="text" id="primeiroNumeroXNOR" placeholder="Primeiro Número">
+                <input type="text" id="segundoNumeroXNOR" placeholder="Segundo Número">
+                <button onclick="calcularXNOR()">Calcular</button>
+            </div>
+            <div id="resultadoXNOR" class="result"></div>
+        </div>
+    </section>
+    <footer>
+        <p>Este projeto utiliza a biblioteca de redes neurais Brain.js para simular portas lógicas. As redes neurais são uma técnica de aprendizado de máquina que pode ser aplicada em diversos problemas, incluindo problemas de lógica. Este projeto demonstra o uso da biblioteca Brain.js para implementar portas lógicas como XOR, AND, OR e outras.</p>
+    </footer>
+</body>
+</html>
